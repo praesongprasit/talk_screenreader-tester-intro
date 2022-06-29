@@ -1,39 +1,36 @@
 /**
- * Lack of Colours - Personal brand theme for reveal.js
+ * Personal brand theme for reveal.js
  *
  * By Prae Songprasit, http://praesongprasit.com
  */
-
 
 // Default mixins and settings -----------------
 @import "../template/mixins";
 @import "../template/settings";
 // ---------------------------------------------
 
-
 // Include theme-specific fonts
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #A2DDD9;
+$backgroundColor: hsl(182, 38%, 13%);
 
-$mainColor: #29595B;
-$headingColor: #0D1D1D;
+$mainColor: #A2DDD9;
+$headingColor: #FFF;
 
-$mainFontSize: 40px;
+$mainFontSize: 50px;
 $mainFont: 'Asap', -apple-system, BlinkMacSystemFont, sans-serif;
 $headingFont: 'Merriweather', -apple-system, BlinkMacSystemFont, serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
 $headingFontWeight: 600;
-$linkColor: #6F4E37;
+$linkColor: #FFEBCD;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
 $heading1Size: 2.5em;
-$heading2Size: 1.6em;
+$heading2Size: 1.8em;
 $heading3Size: 1.3em;
 $heading4Size: 1.0em;
 
@@ -42,7 +39,6 @@ section.has-light-background {
 		color: #222;
 	}
 }
-
 
 // Theme template ------------------------------
 @import "../template/theme";

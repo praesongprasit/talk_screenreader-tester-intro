@@ -1,5 +1,5 @@
 /**
- * Lack of Colours - Personal brand theme for reveal.js
+ * Personal brand theme for reveal.js
  *
  * By Prae Songprasit, http://praesongprasit.com
  */
@@ -12,14 +12,14 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --r-background-color: #A2DDD9;
+  --r-background-color: #152d2e;
   --r-main-font: Asap, -apple-system, BlinkMacSystemFont, sans-serif;
-  --r-main-font-size: 40px;
-  --r-main-color: #29595B;
+  --r-main-font-size: 50px;
+  --r-main-color: #A2DDD9;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
   --r-heading-font: Merriweather, -apple-system, BlinkMacSystemFont, serif;
-  --r-heading-color: #0D1D1D;
+  --r-heading-color: #FFF;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
   --r-heading-text-transform: uppercase;
@@ -27,19 +27,19 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --r-heading-font-weight: 600;
   --r-heading1-text-shadow: none;
   --r-heading1-size: 2.5em;
-  --r-heading2-size: 1.6em;
+  --r-heading2-size: 1.8em;
   --r-heading3-size: 1.3em;
   --r-heading4-size: 1em;
   --r-code-font: monospace;
-  --r-link-color: #6F4E37;
-  --r-link-color-dark: #3c2a1e;
-  --r-link-color-hover: #a27250;
-  --r-selection-background-color: #b78c6e;
+  --r-link-color: #FFEBCD;
+  --r-link-color-dark: #ffcc81;
+  --r-link-color-hover: white;
+  --r-selection-background-color: white;
   --r-selection-color: #fff;
 }
 
 .reveal-viewport {
-  background: #A2DDD9;
+  background: #152d2e;
   background-color: var(--r-background-color);
 }
 
@@ -359,7 +359,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   text-transform: none;
 }
 .reveal h1 {
-  color: #0D1D1D;
+  color: #FFF;
 }
 .reveal bold,
 .reveal strong {
