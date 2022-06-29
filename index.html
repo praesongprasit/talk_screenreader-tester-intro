@@ -18,23 +18,23 @@
 		<meta name="theme-color" content="#A2DDD9"/>
 		<meta name="background-color" content="#fff"/>
 
-		<meta property="og:url" content="https://praesongprasit.github.io/talk_get-devs-into-UX-journey/" />
+		<meta property="og:url" content="https://praesongprasit.github.io/talk_screenreader-ux-intro/" />
 		<meta property="og:type" content="article">
 
-		<meta property="og:image" name="twitter:image" content="https://praesongprasit.github.io/talk_get-devs-into-UX-journey/repository-open-graph_img.png" />
-		<meta property="og:image:alt" content="Web Access Club logo, written in dark teal serif font, with light sea spray background."/>
+		<meta property="og:image" name="twitter:image" content="https://praesongprasit.github.io/talk_screenreader-ux-intro/repository-open-graph_img.png" />
+		<meta property="og:image:alt" content="Screen reader: lets get to know and play with one! Written in dark teal serif font, with light sea spray background."/>
 		<meta property="og:image:type" content="image/png"/>
 		<meta property="og:image:width" content="1280"/>
 		<meta property="og:image:height" content="640"/>
 
-		<meta property="og:title" name="twitter:title" content="Including developers in the User Experience journey" />
-		<meta property="og:description" name="twitter:description" content="How do we go about it?" />
+		<meta property="og:title" name="twitter:title" content="Let's play with a screen reader!" />
+		<meta property="og:description" name="twitter:description" content="One of the tools that help users with different access needs use software, is called a screen reader. But how does one use this assistive technology? And how can designers create a good user experience for this audience?" />
 
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:dnt" content="on">
 		<meta name="twitter:creator" content="@PraeSongprasit">
 
-		<title>Including Developers in the User Experience Journey - Prae Songprasit</title>
+		<title>Let's play with a screen reader! - a talk by Prae Songprasit</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -46,112 +46,210 @@
 	<body>
 		<div class="reveal">
 			<main class="slides">
-				<section>
-					<h1>Title</h1>
-					<p>Subtitle</p>
-					<p class="small-text">
-						<a href="https://twitter.com/PraeSongprasit" alt="Link to Prae Songprasit's twitter">@PraeSongprasit</a>
-					</p>
-
-					<aside class="notes">
-						<p>Prae, UI Front End Developer for 7 years.</p>
-						<p>Specialise in scalable CSS &amp; Semantic HTML for large scale sites.</p>
-						<p>Like Tourism New Zealand, and Xero's customer help portal.</p>
-						<p>To keep things concise, I'm going to refer to Developers 'Dev'.</p>
-						<p>UX researcher? Designer? Devs in the room?</p>
-					</aside>
-				</section>
-
-				<section>
-					<h2>Why?</h2>
+				<section aria-labelledby="slide1">
+					<div id="slide1">
+						<h1>Screen reader</h1>
+						<p>Lets play with one!</p>
+					</div>
 
 					<p>
-						<span class="fragment" data-fragment-index="1">Create <bold>empathy</bold></span>
-						<span class="fragment" data-fragment-index="2">and add <bold>context</bold></span>
+						<small>
+							<a href="https://twitter.com/praesongprasit" alt="Link to Prae Songprasit's twitter">@PraeSongprasit</a>
+						</small>
 					</p>
 
 					<aside class="notes">
-						<p>UX spend all the time empathising with customers, yet not to their own devs</p>
-						<p>Last job, I worked in a service design agency. Seen difference when devs were and were not involved early</p>
-						<p>As a dev, I've grown. Changed the way I approach a problem</p>
-						<p>Once we've experienced this, if done right, the benefit is undeniable</p>
-						<p>Lately feels far away from my users. Given task, and no real user context</p>
+						<p>Kia Ora, Sawasdee-ka, and hello.</p>
+						<p>I'm so happy that you've joined us, to learn a little about screen readers with me today.</p>
+						<p>I hope that by the end of this talk, you will be a little less scared about screen readers, and play with one yourself afterwards!</p>
 					</aside>
 				</section>
 
-				<section>
-					<h2>When?</h2>
-					
-					<img class="stretch"
-							src="img/ux-ui-flow.png"
-							alt="UX-UI flow by Fen https://medium.com/nyc-design/ux-ui-design-process-for-beginner-753952bb2241">
+				<section aria-labelledby="slide2">
+					<aside class="notes">
+						<p>I'm trying to make my talks ever more accessible, and one of the recommendations was to verbally sign post through out the talk.</p>
+						<p>So here's what happening today</p>
+					</aside>
+
+					<div id="slide2">
+						<h2><span aria-hidden="true">🏄🏻 </span>Today's flow</h2>
+
+						<ol>
+							<li>Why I'm here</li>
+							<li>What is a screen reader</li>
+							<li>Who uses it</li>
+							<li>How to use OSX VoiceOver</li>
+							<li>Takeaways</li>
+						</ol>
+					</div>
+				</section>
+
+				<section aria-labelledby="slide3">
+					<h2 id="slide3">About me</h2>
+
+					<picture class="img-mask--round">
+						<img src="img/2022_socialProfile_square_resized.png" alt="Headshot of Prae Songprasit facing left and smiling widely. She has short shoulder length black hair, and is wearing glasses with a white top. The image sits on a plain Aqua Spray background" />
+					</picture>
 
 					<aside class="notes">
-						<p>How early should devs be involved? Depends</p>
-						<p>What kind of project? Is it a technical solution? Or is it a brochureware site?</p>
-						<p>Problem statements can be shared early</p>
-						<p>User research sessions can have devs join in</p>
-						<p>Data intensive projects can benefit from Dev wireframing. Yes UXers can do it with Axure, but devs don't have time to think about data models</p>
+						<p>First, a little bit about me</p>
+
+						<p>I'm a UX engineer, who loves helping people create accessible web products.</p>
+
+						<p>And creator of Web Access Club, an accessibility podcast for web creators. Launching later this year.</p>
+
+						<p>I've been in the NZ tech industry for about 8 years now, specialising in UI front-end work.</p>
+
+						<p>I worked on large scale responsive sites like newzealand.com, and Xero Central - a customer help portal.</p>
+
+						<p>These projects have given me a lot of experience working with UX practitioners. So I have a deep appreciation for this craft. I do owe a significant part of my career to designers I've worked with to solve all sorts of usabilty issues.</p>
+
+						<p>In my free time, I practice Japanese archery, and eat around town. I am a little bit of a foodie.</p>
+
+						<p>In the last couple of years, I've started to dive into wonderful world of web accessibility. Afterall, UI front-end's bread and butter, HTML, plays a crucial role.</p>
+
+						<p><span aria-hidden="true">[Next]</span> That is why I'm here</p>
 					</aside>
 				</section>
 
-				<section>
-					<h2>How?</h2>
+				<section aria-labelledby="slide4">
+					<h2 id="slide4">Why am I here?</h2>
+					<p class="fragment">to learn, share, and recruit<br>more a11y friends❣️</p>
+
+					<aside class="notes">
+						<p>This year, I'm studying to become an internationally certified accessibility practitioner. The CAAP certification, by IAAP (International Association of Accessibility Practitioners).</p>
+
+						<p>What all that means, is that right now, I'm no master at accessibility. There's so much I don't know, but I've committed in learning the craft.</p>
+
+						<p>As we all know, the best way solidify your learning, is to share it.</p>
+
+						<p><span aria-hidden="true">[Next]</span>Who's better than my UX friends! Afterall, you're front-end developers' partner-in-crime.</p>
+						
+						<p>For engineers to create the most accessible product possible, all of us need to be able to understand different users' access needs.</p>
+
+						<p>As we progress with this talk, it will become increasingly clear that a lot of the critical accessibility issues can be resolved early at the UX design phase, then driven home via proper front-end implementation.</p>
+
+						<p>It's going to be a fun! <span aria-hidden="true">[Next]</span></p>
+					</aside>
+				</section>
+
+				<section aria-labelledby="slide5">
+					<h2 id="slide5">What's a screen reader?</h2>
+					<p class="fragment">Assistive software that<br />reads digital content and interfaces</p>
+
+					<aside class="notes">
+						<p>So first up, what on earth is a screen reader??</p>
+
+						<p>True to its name, it's an assistive technology, like my glasses.</p>
+						
+						<p><span aria-hidden="true">[Next]</span> It's a software that reads digital content and interfaces. It helps users who cannot look at the interface, for whatever reason, access other software and its content.</p>
+
+						<p>I'm emphasising on <em>'software that lets you access other software'</em> here.</p>
+
+						<p>As web creators, it's often easy to forget that assistive technologies aren't solely made for accessing the web.</p>
+
+						<p>It's made so that users can access anything on their device. Installed apps and etc. Your web product just happen to be run on an app called a browser, something that assistive tool like screen reader could be used on.</p>
+
+						<p>This is one of the reasons why there's currently no way to track who uses assistive technoliges on your website. Browsers don't collect information on weather another software is interacting with it, or if it's also installed on the same device.</p>
+						
+						<p>Chrome isn't always aware that you're cheating on it, by having Firefox and Safari installed, or how you're using those other browsers? And why should it?! That would be even creepier than the status quo!</p>
+
+						<p>If the lack of user data makes you worried, don't be. If we follow universal and inclusive design principles, screen reader is just another access need we consider as a part of our process. We shouldn't explicitly need stats for how many of these users access our products to design something that also works for them.</p>
+					</aside>
+				</section>
+
+				<section aria-labelledby="slide6">
+					<h2 id="slide6">Who use<br>screen readers?</h2>
 
 					<ul>
-						<li class="fragment" data-fragment-index="1">Ask</li>
-						<li class="fragment" data-fragment-index="2">Align test session with appropriate dev</li>
-						<li class="fragment" data-fragment-index="3">Roster devs</li>
-						<li class="fragment" data-fragment-index="4">Turn them into observers and/or note taker</li>
-						<li class="fragment" data-fragment-index="5">Share findings with the team</li>
+						<li class="fragment" data-fragment-index="1">Blind</li>
+
+						<li class="fragment" data-fragment-index="2">Neurodiverse</li>
+						
+						<li class="fragment" data-fragment-index="3">AI assistant</li>
 					</ul>
 
 					<aside class="notes">
-						<p>A lot of what I taked about means double budget (dev + design) early, which pays off</p>
-						<p>Some devs, especially BEDs, see no point in this. FEDs are often on board</p>
-						<p>When companies first try, they make devs sit in every testing session, both user and usability test. Pointless, deminishing return</p>
-						<p>Data heavy prototype, get devs to sit in first session, fix, and followup</p>
-						<p>Final synthesised findings give devs idea of how decisions are reached, important to them and not</p>
+						<p>When I first learnt about screen readers, I thought only those who are completely blind uses it.</p>
+
+						<p>When I heard the word 'blind', I immediately visualised people who use a guide dog or a stick to move around.</p>
+
+						<p>Oh... how wrong I was. There are so many different access needs that is helped by screen readers. Here are a few that I'm aware of</p>
+
+						<ol>
+							<li>
+								<p><span aria-hidden="true">[Next]</span>
+
+								As I mentioned, many blind users use screen readers. But it's important to note that people can be 'blind' in different ways.</p> 
+								
+								<p>There <em>is</em> a spectrum!</p>
+								
+								<p>Some people are fully blind from birth. Some lose their sight afterwards. Accidents and eye disease can happen to anyone.</p>
+									
+								<p>Some are not completely blind, but are 'legally' blind, which means they have partial use of their sight. Can still see shapes and forms, but perhaps not well enough to drive without glasses.</p>
+
+								<p>Some of these legally blind users could also have different visual impairments like tunnel vision, where they can only see through a tiny gap, as if someone blocked parts of their eyes.</p>
+							</li>
+
+							<li>
+								<p><span aria-hidden="true">[Next]</span>
+
+								Perhaps not as common. But neurodiverse users, which could include people with ADHD, Autism, and other cognitively diverse attributes, also use screen reader to help consume information.</p>
+
+								<p>If you're wondering how... Have you ever been read to, or joined reading class at school? There's benefit in providing multiple ways to consume the same information. Especially when learning.</p>
+							</li>
+
+							<li>
+								<p><span aria-hidden="true">[Next]</span>
+								AI assistant users are pretty much general high tech population.</p>
+								
+								<p>This may come as a surprise to you, but tools like Alexa, Siri, Google home essentially functions as screen reader when you ask it to look things up and read out to you. It's reading information from an app or a website to users.</p>
+							</li>
+					</ol>
+
+					<p>Classic curb cut case, where benefits of designing for access needs like completely blind users also extend to other user groups.</p>
 					</aside>
 				</section>
 
-				<section>
-					<h2>Why not simply share finding?</h2>
-					<p class="fragment" data-fragment-index="1">It's an investment in your developers, and the team</p>
+				<section aria-labelledby="slide7">
+					<h2 id="slide7">Screen reader 101 time!</h2>
+
+					<p>Introducing OSX/Mac's VoiceOver</p>
 
 					<aside class="notes">
-						<p>Only sharing findings is like telling GoT beginning, and explain the ending</p>
-						<p>A dev who see users right click, will remember to markup links correctly</p>
-						<p>Small dev decisions are made without UX knowing. Database structure, allow scroll in iOS, how iframe gets put together and etc.</p>
-						<p>A dev who have witness his/her take 10 seconds to load during a session, is more likely to be on board with performance projects</p>
-						<p>Remind eachother of the experiences we've shared</p>
+						<p>Ok, enough Accessibility baiscs. Lets take a look at a screen reader</p>
+
+						<p>Because I'm a Mac user, I'm more familiar with Mac's pre-built screen reader called VoiceOver.</p>
 					</aside>
 				</section>
 
-				<section>
-					<h2>UX is a journey</h2>
-					<p class="fragment" data-fragment-index="1">
-						Best experience for developers <br>
-						=<br>
-						Best experience for users</p>
-				</section>
-
-				<section>
-					<h2>What next?</h2>
-					<p class="fragment" data-fragment-index="1">
-						UXer, go talk to your devs <br>
-						Devs, ask to be involved
+				<section aria-labelledby="slide8">
+					<h2 id="slide8">Takeaway 1</h2>
+					<p>
+						<em><strong>Content first</strong></em> design and<br>
+						<em><strong>keyboard</strong></em> only navigation is 🗝
 					</p>
+
 					<aside class="notes">
-						<p>Homework!</p>
-						<p>UXer, find a dev. Dev, find UXer. Now talk about how you'd like to work with eachother</p>
-						<p>We've turned UI into UX Designers through involvement in research. Lets Devs into UX Devs too</p>
+						<p></p>
 					</aside>
 				</section>
 
-				<section>
-					<h2>Title</h2>
-					<p>Tweet me <a href="https://twitter.com/PraeSongprasit" alt="Link to Prae Songprasit's twitter">@PraeSongprasit</a></p>
+				<section aria-labelledby="slide9">
+					<h2 id="slide9">Takeaway 2</h2>
+					<p>
+						Learning to use screen reader <br>
+						does not replace testing with <em><strong>real</strong></em> users
+					</p>
+
+					<aside class="notes">
+						<p></p>
+					</aside>
+				</section>
+
+				<section aria-labelledby="slide10">
+					<h2 id="slide10">Become an a11y with me</h2>
+					<p><a href="https://twitter.com/praesongprasit" alt="Link to Prae Songprasit's twitter">@PraeSongprasit</a> or <a href="https://twitter.com/webaccessclub" alt="Link to Prae Songprasit's twitter">@WebAccessClub</a></a></p>
 				</section>
 			</main>
 		</div>
@@ -167,6 +265,7 @@
 			Reveal.initialize({
 				hash: true,
 				transition: 'none',
+				slideNumber: 'c/t',
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
