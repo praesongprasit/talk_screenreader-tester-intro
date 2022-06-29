@@ -60,36 +60,22 @@
 
 					<aside class="notes">
 						<p>Kia Ora, Sawasdee-ka, and hello.</p>
-						<p>I'm so happy that you've joined us, to learn a little about screen readers with me today.</p>
-						<p>I hope that by the end of this talk, you will be a little less scared about screen readers, and play with one yourself afterwards!</p>
+						<p>Have you recovered from post-lunch slump?</p>
+						<p>Hopefully, I'll keep you interested enough to stay awake!</p>
+						<p>I hope that by the end of this talk, you will be a little less scared about screen readers, and be keen to play with one yourself afterwards!</p>
+						<p>Before we proceed, who here has used screen readers?!</p>
+						<p>If you have, you can proceed to judge my lack of proficiency. If you haven't, yay we can mess up together</p>
 					</aside>
 				</section>
 
 				<section aria-labelledby="slide2">
-					<aside class="notes">
-						<p>I'm trying to make my talks ever more accessible, and one of the recommendations was to verbally sign post through out the talk.</p>
-						<p>So here's what happening today</p>
-					</aside>
-
-					<div id="slide2">
-						<h2 hidden><span aria-hidden="true">🏄🏻 </span>Today's flow</h2>
-
-						<ol>
-							<li>Why I'm here</li>
-							<li>What is a screen reader</li>
-							<li>Who uses it</li>
-							<li>How to use OSX VoiceOver</li>
-							<li>Takeaways</li>
-						</ol>
-					</div>
-				</section>
-
-				<section aria-labelledby="slide3">
 					<h2 hidden id="slide3">About me</h2>
 
 					<picture class="img-mask--round">
 						<img src="img/2022_socialProfile_square_resized.png" alt="Headshot of Prae Songprasit facing left and smiling widely. She has short shoulder length black hair, and is wearing glasses with a white top. The image sits on a plain Aqua Spray background" />
 					</picture>
+
+					<p>This UX Engineer is best buds with QE</p>
 
 					<aside class="notes">
 						<p>First, a little bit about me</p>
@@ -98,47 +84,42 @@
 
 						<p>And creator of Web Access Club, an accessibility podcast for web creators. Launching later this year.</p>
 
-						<p>I've been in the NZ tech industry for about 8 years now, specialising in UI front-end work.</p>
+						<p>I've been in the NZ tech industry for about 8 years now, specialising in UI front-end work. Accessibility is an important part of my practice.</p>
 
-						<p>I worked on large scale responsive sites like newzealand.com, and Xero Central - a customer help portal.</p>
+						<p>I have a lot of experience working with exploratory testers. So I have a deep appreciation for that art of breaking my badly written code.</p> 
+						
+						<p>I do owe a significant part of my career to you detail oriented folks, bringing me all sorts of usabilty issues that the designers and I hadn't even thought possible. <span aria-hidden="true">[Next]</span></p>
+					</aside>
+				</section>
 
-						<p>These projects have given me a lot of experience working with UX practitioners. So I have a deep appreciation for this craft. I do owe a significant part of my career to designers I've worked with to solve all sorts of usabilty issues.</p>
+				<section aria-labelledby="slide3">
+					<div id="slide2">
+						<h2 class="fragment" data-fragment-index="1">😑 😱 😵‍💫</h2>
+					
+						<p class="fragment" data-fragment-index="1">Common reactions to <br><strong>anything</strong> related to accessibility</p>
+					</div>
 
-						<p>In my free time, I practice Japanese archery, and eat around town. I am a little bit of a foodie.</p>
-
-						<p>In the last couple of years, I've started to dive into wonderful world of web accessibility. Afterall, UI front-end's bread and butter, HTML, plays a crucial role.</p>
-
-						<p><span aria-hidden="true">[Next]</span> That is why I'm here</p>
+					<aside class="notes">
+						<p>Over the last few years, I've been trying to convince people in different roles accross the business about importance of accessibility... and implementing accesssible experiences.</p>
+						<p>When I speak to testers, that means a lot more things to test for. I get many different reactions... Most of them, are like this <span aria-hidden="true">[Next]</span></p>
+						<p>Unimpressed, horrified by more work, no idea how to add it to their workflow</p>
+						<p>I was disheartened at first...</p>
+						<p>But what I realised... is that those reaction are caused by fear of the unknown.</p>
+						<p>I mean, how many of us have dealt with people with disabilities on our daily lives?</p>
+						<p>Sure, I know people who need glasses, struggle with contrast, has colourblindness... Those are the problems many of us can understand and solve without much convincing. It's using our eyes</p>
+						<p>But how many people do I personally know, is someone who relies upon screen readers? None</p>
+						<p>So of course it's unknown. Of course it's scary. You have no frame of reference. You keep deferring learning to use the tool.</p>
+						<p>But it doesn't have to be that way</p> 
+						<p>That is why I'm here, to show you how approachable it actually it. And quite useful <span aria-hidden="true">[Next]</span></p>
 					</aside>
 				</section>
 
 				<section aria-labelledby="slide4">
-					<h2 id="slide4">Why am I here?</h2>
-					<p class="fragment">to learn, share, and recruit<br>more a11y friends❣️</p>
-
-					<aside class="notes">
-						<p>This year, I'm studying to become an internationally certified accessibility practitioner. The CAAP certification, by IAAP (International Association of Accessibility Practitioners).</p>
-
-						<p>What all that means, is that right now, I'm no master at accessibility. There's so much I don't know, but I've committed in learning the craft.</p>
-
-						<p>As we all know, the best way solidify your learning, is to share it.</p>
-
-						<p><span aria-hidden="true">[Next]</span>Who's better than my UX friends! Afterall, you're front-end developers' partner-in-crime.</p>
-						
-						<p>For engineers to create the most accessible product possible, all of us need to be able to understand different users' access needs.</p>
-
-						<p>As we progress with this talk, it will become increasingly clear that a lot of the critical accessibility issues can be resolved early at the UX design phase, then driven home via proper front-end implementation.</p>
-
-						<p>It's going to be a fun! <span aria-hidden="true">[Next]</span></p>
-					</aside>
-				</section>
-
-				<section aria-labelledby="slide5">
-					<h2 id="slide5">What's a <br>screen reader?</h2>
+					<h2 id="slide4">What's a <br>screen reader?</h2>
 					<p class="fragment">Assistive software that<br />reads digital content and interfaces</p>
 
 					<aside class="notes">
-						<p>So first up, what on earth is a screen reader??</p>
+						<p>But! We need to understand what on earth is a screen reader??</p>
 
 						<p>True to its name, it's an assistive technology, like my glasses.</p>
 						
@@ -149,17 +130,11 @@
 						<p>As web creators, it's often easy to forget that assistive technologies aren't solely made for accessing the web.</p>
 
 						<p>It's made so that users can access anything on their device. Installed apps and etc. Your web product just happen to be run on an app called a browser, something that assistive tool like screen reader could be used on.</p>
-
-						<p>This is one of the reasons why there's currently no way to track who uses assistive technoliges on your website. Browsers don't collect information on weather another software is interacting with it, or if it's also installed on the same device.</p>
-						
-						<p>Chrome isn't always aware that you're cheating on it, by having Firefox and Safari installed, or how you're using those other browsers? And why should it?! That would be even creepier than the status quo!</p>
-
-						<p>If the lack of user data makes you worried, don't be. If we follow universal and inclusive design principles, screen reader is just another access need we consider as a part of our process. We shouldn't explicitly need stats for how many of these users access our products to design something that also works for them.</p>
 					</aside>
 				</section>
 
-				<section aria-labelledby="slide6">
-					<h2 id="slide6">Who use<br>screen readers?</h2>
+				<section aria-labelledby="slide5">
+					<h2 id="slide5">Who use it?</h2>
 
 					<ul>
 						<li class="fragment" data-fragment-index="1">Blind</li>
@@ -167,6 +142,8 @@
 						<li class="fragment" data-fragment-index="2">Neurodiverse</li>
 						
 						<li class="fragment" data-fragment-index="3">AI assistant</li>
+
+						<li class="fragment" data-fragment-index="4">Lazy ol' me</li>
 					</ul>
 
 					<aside class="notes">
@@ -211,45 +188,36 @@
 					</aside>
 				</section>
 
-				<section aria-labelledby="slide7">
-					<h2 id="slide7">Screen reader 101 time!</h2>
+				<section aria-labelledby="slide6">
+					<h2 id="slide6">A live demo!</h2>
 
 					<p>Introducing OSX/Mac's VoiceOver</p>
 
 					<aside class="notes">
-						<p>Ok, enough Accessibility baiscs. Lets take a look at a screen reader</p>
+						<p>Ok, enough Accessibility basics. Lets take a look at a screen reader</p>
 
 						<p>Because I'm a Mac user, I'm more familiar with Mac's pre-built screen reader called VoiceOver.</p>
 					</aside>
 				</section>
 
+				<section aria-labelledby="slide7">
+					<h2 id="slide7">It is exploratory</h2>
+					<p>
+						<em><strong>screen reader</strong></em> and<br>
+						<em><strong>keyboard</strong></em> only navigation can be fun!
+					</p>
+
+					<aside class="notes">
+						<p>This, isn't really a session to teach you how to use a screen reader. There are better Youtube videos for that.</p>
+						<p>I'm here to show you, that it is just a tool. Another way to ensure that your product is of high quality, that will be usable for your users.</p>
+						<p>There's no need to be scared of it. And it is a skill that could come mighty handy in your old age. Easier to learn it now than later</p>
+						<p>You get warm and fuzzy feeling that you're doing the right thing, by making it possible for more people to use your product.</p>
+					</aside>
+				</section>
+
 				<section aria-labelledby="slide8">
-					<h2 id="slide8">Takeaway 1</h2>
-					<p>
-						<em><strong>Content first</strong></em> design and<br>
-						<em><strong>keyboard</strong></em> only navigation is 🗝
-					</p>
-
-					<aside class="notes">
-						<p></p>
-					</aside>
-				</section>
-
-				<section aria-labelledby="slide9">
-					<h2 id="slide9">Takeaway 2</h2>
-					<p>
-						Learning to use screen reader <br>
-						does not replace testing with <em><strong>real</strong></em> users
-					</p>
-
-					<aside class="notes">
-						<p></p>
-					</aside>
-				</section>
-
-				<section aria-labelledby="slide10">
-					<h2 id="slide10">Become an a11y with me</h2>
-					<p><a href="https://twitter.com/praesongprasit" alt="Link to Prae Songprasit's twitter">@PraeSongprasit</a> or <a href="https://twitter.com/webaccessclub" alt="Link to Prae Songprasit's twitter">@WebAccessClub</a></a></p>
+					<h2 id="slide8">Be curious with me!</h2>
+					<p><a href="https://twitter.com/praesongprasit" alt="Prae Songprasit's twitter">@PraeSongprasit</a> or <a href="https://twitter.com/webaccessclub" alt="Web Access Club podcast twitter">@WebAccessClub</a></a></p>
 				</section>
 			</main>
 		</div>
