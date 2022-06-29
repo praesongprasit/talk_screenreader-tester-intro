@@ -1,7 +1,7 @@
 # Talk title
 
 This 25 mins talk was prepared for:
-- [Event](https://www.nztestingconf.co.nz/) - 1st July 2022
+- [NZ Testing Conference](https://www.nztestingconf.co.nz/) - 1st July 2022
 
 Accessibility is finally a hot thing in tech! (Albeit, after years of neglect and many high profile lawsuits later... cheers Dominos)
 
