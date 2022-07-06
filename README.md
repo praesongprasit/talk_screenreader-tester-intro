@@ -11,10 +11,8 @@ Let's run OSX VoiceOver over a site or an app to find out.
 
 ## Viewing
 
-The slides can be viewed on:
-https://praesongprasit.github.io/talk_screenreader-tester-intro/
-
-To view slide notes, open the slide and press the `s` key.
+- [Slides](https://praesongprasit.github.io/talk_screenreader-tester-intro/), view slide notes, open the slide and press the `s` key
+- [Recording](https://www.youtube.com/watch?v=sSk27PNHr5A)
 
 ## License
 
